@@ -241,3 +241,30 @@ var app = new Vue({
     }
     
 })
+
+
+
+
+
+
+
+
+
+
+
+
+
+                    <div class="row">
+                        <div class="col-lg-12 text-center">
+                            <h2>Portfolio</h2>
+                            <hr class="star-primary">
+                        </div>
+                    </div>
+
+                    <div class="row">
+                        <div v-for="(picTab, index) in picTabs"
+                            :key="picTab.tabId"
+                            class="col-sm-4 portfolio-item">
+                            <a><img :src="{ tabPic }" class="img-responsive img-thumbnail" alt=""></a>
+                        </div>
+                    </div>
